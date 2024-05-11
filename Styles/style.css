@@ -181,7 +181,7 @@ html {
 .companies-container {
   background-color: #F5F6F8;
   width: 100vw;
-  padding: 20px;
+  padding: 10px;
 }
 
 .companies-title {
@@ -193,14 +193,13 @@ html {
 }
 
 .companies-content {
-  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .company {
-  margin: 20px;
+  margin: 10px;
   display: flex;
   align-items: center;
 }
