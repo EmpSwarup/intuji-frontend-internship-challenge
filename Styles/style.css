@@ -15,6 +15,7 @@
   --small-text: 14px;
   --medium-text: 16px;
   --normal-text: 20px;
+  --large-text: 22px;
   --extra-large-text: 60px;
 
   /*========== Font weight ==========*/
@@ -42,7 +43,6 @@ html {
 /* Above fold section */
 
 .above-fold {
-  height: 100dvh;
   width: 100vw;
   background: var(--gradient);
   font-size: var(--small-text);
@@ -100,7 +100,7 @@ html {
 /* Header */
 
 .header {
-  padding: 30px 100px;
+  padding: 50px 100px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -181,13 +181,32 @@ html {
 .companies-container {
   background-color: #F5F6F8;
   width: 100vw;
-  height: 239px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
 }
 
 .companies-title {
   color: black;
-  font-weight: var(--font-normal);
+  padding: 20px;
+  font-size: var(--large-text);
+  font-weight: var(--font-thin);
+  text-align: center;
 }
+
+.companies-content {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.company img {
+  max-width: 150px;
+  height: auto;
+}
+
