@@ -7,6 +7,7 @@
   --purple-color: #4F46BA;
   --blue-color: #3734A9;
   --grey-color: #757095;
+  --dark-grey-color: #e2e2e2;
   --gradient: linear-gradient(155deg, #C9E7F2, #62BADA );
 
 
@@ -16,6 +17,8 @@
   --medium-text: 16px;
   --normal-text: 20px;
   --large-text: 22px;
+  --big-text: 30px;
+  --larger-text: 56px;
   --extra-large-text: 60px;
 
   /*========== Font weight ==========*/
@@ -38,6 +41,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: var(--body-font);
+  background-color: #FAFBFF;
 }
 
 /* Above fold section */
@@ -70,20 +74,20 @@ html {
   font-weight: var(--font-semi-bold);
 }
 
-.navbar-links a {
+.navbar-link a {
   color: black;
   margin-right: 20px;
   text-decoration: none;
 }
 
-.sign-in {
+.navbar-buttons-sign-in {
   text-decoration: none;
   margin-right: 30px;
   padding: 8px 12px;
   color: black;
 }
 
-.start {
+.navbar-buttons-start {
   background-color: var(--purple-color);
   color: white;
   margin-right: 10px;
@@ -91,7 +95,7 @@ html {
   text-decoration: none;
 }
 
-.start:hover {
+.navbar-buttons-start:hover {
   transition: 0.3s;
   background-color: white;
   color: var(--purple-color);
@@ -136,11 +140,11 @@ html {
   font-size: var(--medium-text);
 }
 
-.get-started, .see-work {
+.header-buttons-get-started, .header-buttons-see-work {
   margin-right: 20px;
 }
 
-.get-started {
+.header-buttons-get-started {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,14 +156,14 @@ html {
   text-decoration: none;
 }
 
-.get-started:hover {
+.header-buttons-get-started:hover {
   cursor: pointer;
   transition: 0.3s;
   background-color: white;
   color: var(--blue-color);
 }
 
-.see-work {
+.header-buttons-see-work {
   color: var(--blue-color);
 }
 
@@ -209,3 +213,108 @@ html {
   height: auto;
 }
 
+/* Section 1 */
+
+.section-1 {
+  padding: 80px 100px;
+}
+
+.section-1-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-1-heading {
+  width: calc(50% - 10px);
+}
+
+.section-1-title {
+  font-size: var(--larger-text);
+  font-weight: var(--font-bold);
+  margin-bottom: 10px;
+}
+
+.section-1-subtitle,
+.section-1-testimonial-card-text,
+.section-1-testimonial-card-author {
+  font-size: var(--medium-text);
+  font-weight: var(--medium-text);
+  color: #777;
+}
+
+.section-1-testimonial-card {
+  background-color: var(--dark-grey-color);
+  color: black;
+  font-size: var(--medium-text);
+  font-weight: var(--font-medium);
+  width: 35%; /* Grey background color */
+  border-radius: 20px; /* Rounded corners */
+  padding: 40px; /* Padding inside the card */
+  margin-bottom: 20px; /* Add margin to separate from other elements */
+  position: relative; /* Positioning context for the quotes icon */
+}
+
+.section-1-testimonial-card-author {
+  padding-top: 15px;
+}
+
+.section-1-quotes {
+  position: absolute; /* Position the quotes icon */
+  left: 40px; /* Adjust the horizontal position */
+  top: -20px; /* Adjust the vertical position */
+}
+
+.section-1-content {
+  margin-top: 20px;
+}
+
+.section-1-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.section-1-card {
+  border-radius: 20px;
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  height: 380px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.section-1-card-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: var(--large-text);
+  font-weight: var(--font-bold);
+}
+
+.section-1-card-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.section-1-card-title {
+  font-size: var(--big-text);
+  font-weight: var(--font-bold);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.section-1-card-text {
+  font-size: var(--small-text);
+  font-weight: var(--font-thin);
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+
+/* Section 2 */
