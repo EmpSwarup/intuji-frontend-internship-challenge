@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  /*Colors*/
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(var(--hue), var(--sat), 0%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 0%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --container-color: #fff;
+  --button-color: #4F46BA;
+
+
+  /*========== Font and typography ==========*/
+  --body-font: "Manrope", sans-serif;
+  --small-text: 14px;
+  --large-text: 20px;
+
+  /*========== Font weight ==========*/
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: var(--body-font);
+}
+
+/* Above fold section */
+
+.above-fold {
+  height: 100dvh;
+  width: 100vw;
+  background: linear-gradient(to left, #62BADA, #C9E7F2);
+  font-size: var(--small-text);
+}
+
+/* Navbar */
+
+.navbar {
+  margin-top: 15px;
+  padding: 20px 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: var(--large-text);
+  color: black;
+  font-weight: var(--font-bold);
+}
+
+.navbar-links a {
+  color: black;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.sign-in {
+  text-decoration: none;
+  margin-right: 30px;
+  padding: 8px 12px;
+  color: black;
+}
+
+.start {
+  background-color: var(--button-color);
+  color: white;
+  margin-right: 10px;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.start:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: var(--button-color);
+}
+
+/* Comapnies */
+
+.companies-container {
+  background-color: #F5F6F8;
+  width: 100vw;
+  height: 239px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companies-title {
+  color: black;
+  font-weight: var(--font-normal);
+}
