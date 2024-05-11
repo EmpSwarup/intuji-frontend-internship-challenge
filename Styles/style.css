@@ -2,30 +2,28 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3rem;
 
   /*========== Colors ==========*/
-  /*Colors*/
-  --hue: 0;
-  --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 0%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 0%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
-  --button-color: #4F46BA;
+  --purple-color: #4F46BA;
+  --blue-color: #3734A9;
+  --grey-color: #757095;
+  --gradient: linear-gradient(155deg, #C9E7F2, #62BADA );
 
 
   /*========== Font and typography ==========*/
   --body-font: "Manrope", sans-serif;
   --small-text: 14px;
-  --large-text: 20px;
+  --medium-text: 16px;
+  --normal-text: 20px;
+  --extra-large-text: 60px;
 
   /*========== Font weight ==========*/
-  --font-normal: 400;
-  --font-medium: 500;
-  --font-semi-bold: 600;
-  --font-bold: 700;
+  --font-thin: 400;
+  --font-normal: 500;
+  --font-medium: 600;
+  --font-semi-bold: 700;
+  --font-bold: 800;
+  --font-dark: 900;
 }
 
 * {
@@ -46,18 +44,17 @@ html {
 .above-fold {
   height: 100dvh;
   width: 100vw;
-  background: linear-gradient(to left, #62BADA, #C9E7F2);
+  background: var(--gradient);
   font-size: var(--small-text);
 }
 
 /* Navbar */
 
 .navbar {
-  margin-top: 15px;
-  padding: 20px 100px;
-  position: fixed;
+  padding: 30px 100px;
   width: 100%;
   top: 0;
+  font-weight: var(--font-thin);
   z-index: 1000;
 }
 
@@ -68,9 +65,9 @@ html {
 }
 
 .navbar-title {
-  font-size: var(--large-text);
+  font-size: var(--normal-text);
   color: black;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-semi-bold);
 }
 
 .navbar-links a {
@@ -87,7 +84,7 @@ html {
 }
 
 .start {
-  background-color: var(--button-color);
+  background-color: var(--purple-color);
   color: white;
   margin-right: 10px;
   padding: 15px 25px;
@@ -97,8 +94,87 @@ html {
 .start:hover {
   transition: 0.3s;
   background-color: white;
-  color: var(--button-color);
+  color: var(--purple-color);
 }
+
+/* Header */
+
+.header {
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.header-right {
+  flex: 1;
+}
+
+.header-title {
+  font-size: var(--extra-large-text);
+  font-weight: var(--font-bold);
+}
+
+.header-subtitle {
+  margin-top: 10px;
+  width: 80%;
+  font-size: var(--normal-text);
+  font-weight: var(--font-thin);
+}
+
+.header-buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: var(--font-thin);
+  font-size: var(--medium-text);
+}
+
+.get-started, .see-work {
+  margin-right: 20px;
+}
+
+.get-started {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purple-color);
+  color: white;
+  border-radius: 47px;
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+}
+
+.get-started:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: white;
+  color: var(--blue-color);
+}
+
+.see-work {
+  color: var(--blue-color);
+}
+
+.header-info {
+  font-weight: var(--font-thin);
+  font-size: var(--medium-text);
+  color: var(--grey-color);
+  display: flex;
+  margin-top: 25px;
+}
+
+.header-info span {
+  margin-right: 20px;
+}
+
 
 /* Comapnies */
 
