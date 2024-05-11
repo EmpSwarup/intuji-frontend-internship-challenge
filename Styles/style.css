@@ -8,6 +8,8 @@
   --blue-color: #3734A9;
   --grey-color: #757095;
   --dark-grey-color: #e2e2e2;
+  --sky-blue-color: #DFF6FF;
+
   --gradient: linear-gradient(155deg, #C9E7F2, #62BADA );
 
 
@@ -247,11 +249,11 @@ html {
   color: black;
   font-size: var(--medium-text);
   font-weight: var(--font-medium);
-  width: 35%; /* Grey background color */
-  border-radius: 20px; /* Rounded corners */
-  padding: 40px; /* Padding inside the card */
-  margin-bottom: 20px; /* Add margin to separate from other elements */
-  position: relative; /* Positioning context for the quotes icon */
+  width: 35%;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .section-1-testimonial-card-author {
@@ -259,9 +261,9 @@ html {
 }
 
 .section-1-quotes {
-  position: absolute; /* Position the quotes icon */
-  left: 40px; /* Adjust the horizontal position */
-  top: -20px; /* Adjust the vertical position */
+  position: absolute;
+  left: 40px;
+  top: -20px;
 }
 
 .section-1-content {
@@ -314,7 +316,148 @@ html {
   text-align: center;
 }
 
-
-
-
 /* Section 2 */
+
+.section-2 {
+  padding: 30px 100px;
+  display: flex;
+}
+
+.section-2-left {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.section-2-right {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.section-2-subheading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-2-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.section-2-description {
+  font-size: 16px;
+  color: #777;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.section-2-list {
+  margin-top: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.section-2-list > li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.section-2-list > div {
+  margin-bottom: 10px;
+}
+
+.section-2-card-container {
+  position: relative;
+  height: 480px;
+  width: 530px;
+  border-radius: 20px;
+  background-color: var(--sky-blue-color);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.orange-circle, .blue-circle, .green-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  clip-path: circle(50% at 50% 50%);
+  z-index: 0;
+}
+
+.orange-circle {
+  background-color: #FF7F5C;
+  top: -20px;
+  left: -30px;
+}
+
+.blue-circle {
+  background-color: #4F46BA;
+  top: 150px;
+  left: 480px;
+}
+
+.green-circle {
+  background-color: #52F5D8;
+  top: 400px;
+  left: -25px;
+}
+
+.section-2-card {
+  background-color: white;
+  height: 85px;
+  width: 430px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.section-2-card-img {
+  margin-right: 20px;
+}
+
+.section-2-card-money-container {
+  background-color: rgb(188, 188, 255);
+  border-radius: 30px;
+  padding: 3px;
+  height: 26px;
+  width: 90px;
+}
+
+.section-2-card-money {
+  margin-bottom: 5px;
+}
+
+.section-2-card-user {
+  font-size: 12px;
+}
+
+.section-2-card-img img {
+  object-fit: cover;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+
+/* Adjust positioning of cards */
+.section-2-card:nth-child(1) {
+  margin-left: 30px;
+}
+
+.section-2-card:nth-child(2) {
+  margin-left: 90px;
+}
+
+.section-2-card:nth-child(3) {
+  margin-left: 70px;
+}
+
+.section-2-card:nth-child(4) {
+  margin-left: 5px;
+}
