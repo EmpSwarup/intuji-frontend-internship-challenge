@@ -445,7 +445,6 @@ html {
   border-radius: 50%;
 }
 
-/* Adjust positioning of cards */
 .section-2-card:nth-child(1) {
   margin-left: 30px;
 }
@@ -460,4 +459,166 @@ html {
 
 .section-2-card:nth-child(4) {
   margin-left: 5px;
+}
+
+/* Section 3 */
+
+.section-3 {
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-3-left {
+  flex: 1;
+}
+
+.section-3-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.section-3-right img {
+  margin-left: 20px;
+}
+
+.section-3-subtitle,
+.section-3-testimonial-card-text,
+.section-3-testimonial-card-author {
+  font-size: var(--medium-text);
+  font-weight: var(--medium-text);
+  color: #777;
+}
+
+.section-3-testimonial-card {
+  background-color: var(--dark-grey-color);
+  color: black;
+  font-size: var(--medium-text);
+  font-weight: var(--font-medium);
+  width: 480px;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-3-testimonial-card-author {
+  padding-top: 15px;
+}
+
+.section-3-quotes {
+  position: absolute;
+  left: 40px;
+  top: -20px;
+}
+
+.section-3-right {
+  height: 540px;
+  width: 485px;
+  background-color: var(--sky-blue-color);
+}
+
+.section-3-right {
+  position: relative; /* Establish positioning context */
+  height: 540px;
+  width: 485px;
+  background-color: var(--sky-blue-color);
+  display: flex;
+  justify-content: center; /* Center-align items horizontally */
+  align-items: center; /* Center-align items vertically */
+}
+
+.section-3-right img:first-child {
+  height: 540px;
+  width: 660px;
+  position: absolute; /* Position the chart image */
+  top: 250px; /* Adjust vertical position */
+  left: -200px; /* Adjust horizontal position */
+}
+
+.section-3-right img:last-child {
+  height: 680px;
+  width: 3370px;
+  margin-left: 20px;
+  margin-top: -135px; /* Add some space between the two images */
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 30px 100px; /* Adjust padding as needed */
+  overflow: hidden; /* Add overflow hidden to contain floated elements */
+}
+
+.footer-col {
+  width: 25%; /* Each column takes up 25% of the width */
+  float: left; /* Float the columns to achieve side-by-side layout */
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-socials {
+  display: flex;
+  margin-top: 15px;
+}
+
+.footer-socials box-icon {
+  margin-right: 10px; /* Adjust as needed to create the desired gap */
+}
+
+.footer-items {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-items li {
+  margin-bottom: 5px;
+}
+
+.footer-input {
+  height: 52px;
+  padding: 10px 10px;
+  width: calc(100% - 10px); /* Adjust input width as needed */
+}
+
+.footer-col:nth-child(4) {
+  width: 25%; /* Each column takes up 25% of the width */
+  float: left; /* Float the columns to achieve side-by-side layout */
+}
+
+.footer-input-wrapper {
+  display: flex; /* Use flexbox to layout input and button side by side */
+  align-items: center; /* Center items vertically */
+}
+
+.footer-button {
+  background-color: var(--blue-color);
+  color: white;
+  padding: 10px 10px;
+  height: 52px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-description {
+  font-size: 12px;
+  color: #777;
+}
+
+.footer-top {
+  margin-bottom: 70px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clear: both; /* Clear floats */
+  border-top: 1px solid #ddd; /* Add border between top and bottom sections */
+  padding-top: 20px; /* Add space between top and bottom sections */
 }
