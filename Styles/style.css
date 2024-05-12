@@ -239,6 +239,7 @@ html {
   background-color: #F5F6F8;
   width: 100vw;
   padding: 10px;
+  z-index: 2;
 }
 
 .companies-title {
@@ -660,6 +661,83 @@ html {
   margin-bottom: 20px;
 }
 
+/* Testimonial */
+
+.testimonial {
+  padding: 30px 100px;
+}
+
+.testimonial-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.testimonial-subtitle {
+  width: 50%;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.testimonial-cards {
+  display: flex;
+}
+
+.testimonial-card {
+  position: relative;
+  display: flex;
+  height: 400px;
+  width: 700px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 20PX;
+  border: 1px solid #d1d1d1;
+}
+
+.testimonial-card-quotes {
+  position: absolute;
+  left: 40px;
+  top: -20px;;
+}
+
+.testimonial-card-left {
+  padding-top: 20px;
+  max-width: 55%;
+}
+
+.testimonial-card-text {
+  font-size: 16px;
+  color: #333;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-card-author {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.testimonial-card-img {
+  width: 100px;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.testimonial-card-img img {
+  width: 250%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Stats */
+
+/* Blog */
 
 /* Footer */
 
