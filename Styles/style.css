@@ -882,6 +882,44 @@ html {
   margin-right: 20px;
 }
 
+/* FAQ */
+
+/* CTA*/
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 400px;
+  margin-bottom: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.cta img {
+  padding: 30px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width:100%;
+  height:auto;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.cta-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-subtitile {
+  font-size: 18px;
+  color: blue;
+}
+
 /* Footer */
 
 .footer {
