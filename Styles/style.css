@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
 
@@ -15,6 +15,7 @@
 
   /*========== Font and typography ==========*/
   --body-font: "Manrope", sans-serif;
+  --header-text-font: 'Roboto Slab', sans-serif;
   --small-text: 14px;
   --medium-text: 16px;
   --normal-text: 20px;
@@ -114,6 +115,7 @@ html {
 
 .header-left {
   flex: 1;
+  margin-top: 100px;
   margin-right: 20px;
 }
 
@@ -179,6 +181,55 @@ html {
 
 .header-info span {
   margin-right: 20px;
+}
+
+
+.header-right {
+  position: relative;
+  right: -50px;
+  top: -1px;
+}
+
+.header-images {
+  position: absolute;
+  bottom: -54%;
+  left: 30%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.header-images img {
+  width: 550px;
+  height: 550px;
+  margin-bottom: 10px;
+}
+
+.header-images img:first-child {
+  position: absolute;
+  top: -562px;
+  left: 10%;
+  transform: translateX(-60%);
+  z-index: 1;
+}
+
+.header-images img:last-child {
+  position: absolute;
+  bottom: 2px;
+  left: 1%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.header-text {
+  position: relative;
+  z-index: 0;
+}
+
+.header-text svg {
+
+  height: auto;
+  max-width: 60%;
+  width: 60%;
 }
 
 
@@ -521,40 +572,106 @@ html {
 }
 
 .section-3-right {
-  position: relative; /* Establish positioning context */
+  position: relative;
   height: 540px;
   width: 485px;
   background-color: var(--sky-blue-color);
   display: flex;
-  justify-content: center; /* Center-align items horizontally */
-  align-items: center; /* Center-align items vertically */
+  justify-content: center;
+  align-items: center;
 }
 
 .section-3-right img:first-child {
   height: 540px;
   width: 660px;
-  position: absolute; /* Position the chart image */
-  top: 250px; /* Adjust vertical position */
-  left: -200px; /* Adjust horizontal position */
+  position: absolute;
+  top: 250px;
+  left: -200px;
 }
 
 .section-3-right img:last-child {
   height: 680px;
   width: 3370px;
   margin-left: 20px;
-  margin-top: -135px; /* Add some space between the two images */
+  margin-top: -135px;
 }
 
+/* Features */
+
+.features {
+  padding: 30px 100px;
+}
+
+.features-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.features-subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.features-cards {
+  display: grid;
+  margin: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.features-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features-card-subtitle {
+  font-size: 14px;
+  color: #777;
+}
+
+.features-small-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-card {
+  height: 330px;
+}
+
+.features-small-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  height: 78%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features-small-card:first-child {
+  margin-bottom: 20px;
+}
+
+
 /* Footer */
+
 .footer {
   width: 100%;
-  padding: 30px 100px; /* Adjust padding as needed */
-  overflow: hidden; /* Add overflow hidden to contain floated elements */
+  padding: 30px 100px;
+  overflow: hidden;
 }
 
 .footer-col {
-  width: 25%; /* Each column takes up 25% of the width */
-  float: left; /* Float the columns to achieve side-by-side layout */
+  width: 25%;
+  float: left;
 }
 
 .footer-title {
@@ -568,7 +685,7 @@ html {
 }
 
 .footer-socials box-icon {
-  margin-right: 10px; /* Adjust as needed to create the desired gap */
+  margin-right: 10px;
 }
 
 .footer-items {
@@ -583,17 +700,17 @@ html {
 .footer-input {
   height: 52px;
   padding: 10px 10px;
-  width: calc(100% - 10px); /* Adjust input width as needed */
+  width: calc(100% - 10px);
 }
 
 .footer-col:nth-child(4) {
-  width: 25%; /* Each column takes up 25% of the width */
-  float: left; /* Float the columns to achieve side-by-side layout */
+  width: 25%;
+  float: left;
 }
 
 .footer-input-wrapper {
-  display: flex; /* Use flexbox to layout input and button side by side */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center;
 }
 
 .footer-button {
@@ -618,7 +735,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  clear: both; /* Clear floats */
-  border-top: 1px solid #ddd; /* Add border between top and bottom sections */
-  padding-top: 20px; /* Add space between top and bottom sections */
+  clear: both;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
 }
