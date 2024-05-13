@@ -379,6 +379,7 @@ html {
 
 .section-1-card {
   border-radius: 20px;
+  background-color: var(--white-color);
   flex: 1;
   border: 1px solid #ddd;
   padding: 20px;
