@@ -1633,6 +1633,10 @@ html {
   .footer-button {
     padding: 10px 30px;
   }
+
+  .footer-bottom{
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 769px) {
