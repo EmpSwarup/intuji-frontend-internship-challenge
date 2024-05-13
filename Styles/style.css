@@ -78,7 +78,7 @@ html {
   font-weight: var(--font-regular);
   z-index: 1000;
   position: relative;
-  background-color: transparent; /* Keep the background color transparent */
+  background-color: transparent;
 }
 
 .menu-icon {
@@ -1128,7 +1128,6 @@ html {
 
 /*========== Responsive Styles ==========*/
 
-
 @media screen and (max-width: 768px) {
 
   /*--------- Navbar ---------*/
@@ -1153,13 +1152,13 @@ html {
     top: 120px;
     display: none;
     flex-direction: column;
-    align-items: center; /* Align items to the center */
+    align-items: center;
   }
 
   .navbar-link a,
   .navbar-buttons a {
-    margin-right: 0; /* Remove the right margin */
-    margin-bottom: 10px; /* Add bottom margin to separate items */
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
   .show-nav .navbar-link,
@@ -1193,13 +1192,19 @@ html {
   .header-buttons-get-started {
     display: flex;
     align-items: center;
-    justify-content: center; /* Align content horizontally center for responsive screen size */
+    justify-content: center;
     background-color: var(--purple-color);
     color: var(--white-color);
     border-radius: 47px;
     padding: 15px;
-    width: fit-content; /* Adjust width to fit content */
+    width: fit-content;
     text-decoration: none;
+  }
+
+  /*--------- Companies ---------*/
+  .companies-content {
+    display: flex;
+    flex-direction: column;
   }
 }
 
