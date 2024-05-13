@@ -912,6 +912,7 @@ html {
 }
 
 .stat-description {
+  display: flex;
   font-size: var(--big-text);
   font-weight: var(--font-regular);
 }
