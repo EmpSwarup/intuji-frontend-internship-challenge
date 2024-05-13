@@ -7,7 +7,7 @@
 
 ## Installation/Usage
 
-1. Clone the repository: `git clone https://github.com/username/project.git` or download it directly.
+1. Clone the repository or download it directly.
 2. Run index.html
 
 Or
