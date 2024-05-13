@@ -1251,17 +1251,24 @@ a {
     margin-right: 0px;
   }
 
+  .header-title {
+    font-size: var(--small-screen-title-text);
+  }
+
   .header-right {
     display: none;
   }
 
   .header-left {
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
+
+
 
   .header-buttons-get-started {
     display: flex;
@@ -1298,6 +1305,10 @@ a {
     text-align: center;
   }
 
+  .section-1-title {
+    font-size: var(--small-screen-title-text);
+  }
+
   .section-1-testimonial-card {
     margin: 0;
     margin-top: 30px;
@@ -1330,6 +1341,10 @@ a {
 .section-2-heading, .section-2-subheading, .section-2-description {
   text-align: center;
 }
+.section-2-heading {
+  font-size: var(--small-screen-title-text);
+}
+
 
   /*--------- Section 3 ---------*/
 
@@ -1341,6 +1356,10 @@ a {
 
   .section-3-heading, .section-3-subheading, .section-3-description {
     text-align: center;
+  }
+
+  .section-3-heading{
+    font-size: var(--small-screen-title-text);
   }
 
   .section-3-right {
@@ -1366,6 +1385,10 @@ a {
 
   .features-title, .features-subtitle {
     text-align: center;
+  }
+
+  .features-title {
+    font-size: var(--small-screen-title-text);
   }
 
   .features-subtitle {
@@ -1479,6 +1502,7 @@ a {
   }
 
   .blogs-title{
+    font-size: var(--small-screen-title-text);
     text-align: center;
   }
 
@@ -1517,6 +1541,7 @@ a {
 }
 
   .faq-title {
+    font-size: var(--small-screen-title-text);
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
