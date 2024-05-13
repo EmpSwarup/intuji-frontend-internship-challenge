@@ -1521,6 +1521,7 @@ html {
 
   .stat-description {
     display: flex;
+    align-items: center;
     font-size: var(--tiny-text);
   }
 
