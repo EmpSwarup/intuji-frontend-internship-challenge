@@ -1105,7 +1105,7 @@ html {
   align-items: center;
   justify-content: center;
   padding: 200px 400px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   position: relative;
   text-align: center;
 }
@@ -1158,7 +1158,8 @@ html {
 }
 
 .footer-title {
-  font-weight: bold;
+  font-size: var(--normal-text);
+  font-weight: var(--font-bold);
   margin-bottom: 10px;
 }
 
@@ -1177,13 +1178,17 @@ html {
 }
 
 .footer-items li {
+  font-size: var(--medium-text);
+  font-weight: var(--font-medium);
   margin-bottom: 5px;
 }
 
 .footer-input {
   height: 52px;
-  padding: 10px 10px;
-  width: calc(100% - 10px);
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: none;
+  background-color: #EEEEFF;
 }
 
 .footer-col:nth-child(4) {
@@ -1194,20 +1199,26 @@ html {
 .footer-input-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .footer-button {
   background-color: var(--blue-color);
-  color: white;
-  padding: 10px 10px;
+  color: var(--white-color);
+  padding: 10px 30px;
   height: 52px;
   border: none;
   cursor: pointer;
 }
 
+.footer-button:hover {
+  background-color: var(--purple-color);
+}
+
 .footer-description {
-  font-size: 12px;
-  color: #777;
+  font-size: var(--medium-text);
+  font-weight: var(--font-medium);
+  color: var(--grey-color);
 }
 
 .footer-top {
@@ -1216,6 +1227,8 @@ html {
 
 .footer-bottom {
   display: flex;
+  font-size: var(--medium-text);
+  font-weight: var(--font-regular);
   align-items: center;
   justify-content: center;
   clear: both;
@@ -1493,6 +1506,41 @@ html {
     max-width: 100%;
     display: block;
     margin-top: 20px;
+  }
+
+  /*--------- Footer ---------*/
+
+  .footer {
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-top {
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    margin-bottom: 20px;
+  }
+
+  .footer-cols {
+    width: 60%;
+  }
+
+  .footer-title {
+    font-size: var(--medium-text);
+  }
+
+  .footer-button {
+    padding: 10px 30px;
   }
 }
 
