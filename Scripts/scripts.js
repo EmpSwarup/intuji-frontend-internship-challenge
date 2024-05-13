@@ -7,3 +7,13 @@ faqCards.forEach(card => {
     card.classList.toggle('clicked');
   });
 });
+
+// For menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.querySelector('.menu-icon');
+  const navbarContainer = document.querySelector('.navbar-container');
+
+  menuIcon.addEventListener('click', function() {
+    navbarContainer.classList.toggle('show-nav');
+  });
+});
