@@ -37,6 +37,7 @@
   --extra-large-text: 48px;
   --extra-larger-text: 56px;
   --extra-extra-large-text: 60px;
+  --small-screen-title-text:27px;
 
   /*========== Font weight ==========*/
 
@@ -829,6 +830,7 @@ html {
 }
 
 .testimonial-card {
+  width: 55%;
   flex: 0 0 auto;
   scroll-snap-align: start;
   margin-right: 20px;
@@ -1436,12 +1438,18 @@ html {
     height: 300px;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 1300px;
+    margin-bottom: 1200px; /* Need this because the elements below somehow clip above testimonial */
+  }
+
+  .testimonial-title {
+    font-size: var(--small-screen-title-text);
   }
 
   .testimonial-subtitle {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .testimonial-cards {
@@ -1451,8 +1459,22 @@ html {
   }
 
   .testimonial-card {
-    width: 140%;
+    text-align: start;
+    width: 90%;
+    max-width: 350px;
     margin-bottom: 20px;
+    display: flex;
+  }
+
+  .testimonial-card-img {
+    flex: 0 0 auto;
+    width: 100px;
+    margin-right: 20px;
+  }
+
+  .testimonial-card-img img {
+    width: 130%;
+    height: 100%;
   }
 
   .testimonial-card-author {
@@ -1466,6 +1488,8 @@ html {
   .testimonial-controls {
     display: none;
   }
+
+
 
   /*--------- Stats ---------*/
 
