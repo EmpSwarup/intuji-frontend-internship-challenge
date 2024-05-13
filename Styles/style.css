@@ -1128,9 +1128,11 @@ html {
 
 /*========== Responsive Styles ==========*/
 
-/*--------- Navbar ---------*/
 
 @media screen and (max-width: 768px) {
+
+  /*--------- Navbar ---------*/
+
   .navbar {
     padding: 20px 30px;
     margin-right: 0px;
@@ -1167,6 +1169,37 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  /*--------- Header ---------*/
+
+  .header {
+    padding: 5px 30px;
+    margin-right: 0px;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-buttons-get-started {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align content horizontally center for responsive screen size */
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    border-radius: 47px;
+    padding: 15px;
+    width: fit-content; /* Adjust width to fit content */
+    text-decoration: none;
   }
 }
 
