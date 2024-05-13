@@ -32,6 +32,7 @@
   --big-text: 30px;
   --larger-text: 36px;
   --extra-large-text: 48px;
+  --extra-extra-large-text: 60px;
 
   /*========== Font weight ==========*/
 
@@ -147,7 +148,8 @@ html {
 /* Header */
 
 .header {
-  padding: 50px 100px;
+  padding: 30px 100px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -164,15 +166,15 @@ html {
 }
 
 .header-title {
-  font-size: var(--extra-large-text);
-  font-weight: var(--font-bold);
+  font-size: var(--extra-extra-large-text);
+  font-weight: var(--font-extra-bold);
 }
 
 .header-subtitle {
   margin-top: 10px;
   width: 80%;
   font-size: var(--normal-text);
-  font-weight: var(--font-thin);
+  font-weight: var(--font-regular);
 }
 
 .header-buttons {
@@ -180,7 +182,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-weight: var(--font-thin);
+  font-weight: var(--font-regular);
   font-size: var(--medium-text);
 }
 
@@ -193,7 +195,7 @@ html {
   align-items: center;
   justify-content: center;
   background-color: var(--purple-color);
-  color: white;
+  color: var(--white-color);
   border-radius: 47px;
   padding: 15px;
   width: 150px;
@@ -208,6 +210,7 @@ html {
 }
 
 .header-buttons-see-work {
+  cursor: pointer;
   color: var(--blue-color);
 }
 
@@ -220,7 +223,13 @@ html {
 }
 
 .header-info span {
+  margin-left: 5px;
   margin-right: 20px;
+}
+
+.play-button {
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 
@@ -246,15 +255,16 @@ html {
 
 .header-images img:first-child {
   position: absolute;
-  top: -562px;
+  height: 700px;
+  top: -622px;
   left: 10%;
   transform: translateX(-60%);
-  z-index: 1;
+  z-index: 2;
 }
 
 .header-images img:last-child {
   position: absolute;
-  bottom: 2px;
+  bottom: -30px;
   left: 1%;
   transform: translateX(-50%);
   z-index: 1;
@@ -266,7 +276,6 @@ html {
 }
 
 .header-text svg {
-
   height: auto;
   max-width: 60%;
   width: 60%;
@@ -276,10 +285,11 @@ html {
 /* Comapnies */
 
 .companies-container {
+  position: relative;
   background-color: #F5F6F8;
   width: 100vw;
   padding: 10px;
-  z-index: 2;
+  z-index: 5;
 }
 
 .companies-title {
