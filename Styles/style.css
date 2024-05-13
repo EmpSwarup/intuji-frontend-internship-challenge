@@ -1396,7 +1396,7 @@ html {
     height: 300px;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1300px;
   }
 
   .testimonial-subtitle {
@@ -1405,7 +1405,6 @@ html {
   }
 
   .testimonial-cards {
-
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
@@ -1453,7 +1452,7 @@ html {
   }
 
   .stat-title {
-font-size: var(--normal-text);
+    font-size: var(--normal-text);
   }
 
   .stat-description {
