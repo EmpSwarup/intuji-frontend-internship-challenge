@@ -760,24 +760,58 @@ html {
 /* Testimonial */
 
 .testimonial {
+  position: relative;
   padding: 30px 100px;
+  height: 100vh;
 }
 
 .testimonial-title {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: var(--extra-extra-large-text);
+  font-weight: var(--font-extra-bold);
   margin-bottom: 20px;
 }
 
 .testimonial-subtitle {
   width: 50%;
-  font-size: 16px;
-  color: #777;
+  font-size: var(--medium-text);
+  font-weight: var(--font-regular);
   margin-bottom: 40px;
 }
 
 .testimonial-cards {
   display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  transition: transform 0.5s ease;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-controls {
+  position: absolute;
+  top: 35%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2;
+  transform: translateY(-30%);
+}
+
+.testimonial-control-left {
+  position: absolute;
+  left: -200px;
+}
+
+.testimonial-control-right {
+  position: absolute;
+  left: 1180px;
+}
+
+.testimonial-control {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 350px;
+  width: 350px;;
 }
 
 .testimonial-card {
@@ -793,11 +827,12 @@ html {
   border: 1px solid #d1d1d1;
 }
 
-.testimonial-card-quotes {
-  position: absolute;
-  left: 40px;
-  top: -20px;;
+.testimonial-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin-right: 20px;
 }
+
 
 .testimonial-card-left {
   padding-top: 20px;
@@ -805,8 +840,8 @@ html {
 }
 
 .testimonial-card-text {
-  font-size: 16px;
-  color: #333;
+  font-size: var(--large-text);
+  font-weight: var(--font-semi-bold);
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -814,9 +849,9 @@ html {
 }
 
 .testimonial-card-author {
-  font-size: 14px;
-  color: #777;
-  margin-top: 10px;
+  font-size: var(--normal-text);
+  font-weight: var(--font-semi-bold);
+  margin-top: 30px;
 }
 
 .testimonial-card-img {
@@ -1327,7 +1362,7 @@ html {
     width: 100%;
   }
 
-  /*--------- Section 3 ---------*/
+  /*--------- Features ---------*/
 
   .features {
     padding: 20px 30px;
@@ -1348,6 +1383,48 @@ html {
     display: flex;
     flex-direction: column;
   }
+
+  /*--------- Testimonial ---------*/
+
+  .testimonial {
+    padding: 20px 40px;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-subtitle {
+    display: flex;
+    align-items: center;
+  }
+
+  .testimonial-cards {
+
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .testimonial-card {
+    width: 140%;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-card-author {
+    font-size: var(--tiny-text);
+  }
+
+  .testimonial-card-text {
+    font-size: var(--tiny-text);
+  }
+
+  .testimonial-controls {
+    display: none;
+  }
+
+  /*--------- Stats ---------*/
 
 }
 
