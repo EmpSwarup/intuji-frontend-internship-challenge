@@ -875,15 +875,15 @@ html {
   color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--blue-color);
   position: relative;
 }
 
-
 .stats-left {
-  width: 15%;
-  font-weight: bold;
-  font-size: 24px;
+  width: 25%;
+  font-weight: var(--font-regular);
+  font-size: var(--normal-text);
   padding-right: 20px;
   margin-right: 40px;
   border-right: 3px solid black;
@@ -894,19 +894,23 @@ html {
 
 .stats-right {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .stat {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .stat-title {
-  font-weight: bold;
-  font-size: 20px;
+  font-size: var(--extra-extra-large-text);
+  font-weight: var(--font-extra-bold);
 }
 
 .stat-description {
-  font-size: 16px;
+  font-size: var(--big-text);
+  font-weight: var(--font-regular);
 }
 
 /* Blog */
@@ -1425,6 +1429,39 @@ html {
   }
 
   /*--------- Stats ---------*/
+
+  .stats {
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .stats-left {
+    width: 100%;
+    margin-right: 0;
+    border-right: none;
+    text-align: center;
+  }
+
+  .stats-right {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .stat-title {
+font-size: var(--normal-text);
+  }
+
+  .stat-description {
+    display: flex;
+    font-size: var(--tiny-text);
+  }
+
+  /*--------- CTA ---------*/
 
 }
 
