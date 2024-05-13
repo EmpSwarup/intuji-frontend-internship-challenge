@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 /*=============== VARIABLES CSS ===============*/
+
 :root {
 
   /*========== Colors ==========*/
@@ -9,28 +12,38 @@
   --grey-color: #757095;
   --dark-grey-color: #e2e2e2;
   --sky-blue-color: #DFF6FF;
+  --bg-color: #FAFBFF;
+  --black-color: #000;
+  --white-color: #fff;
 
   --gradient: linear-gradient(155deg, #C9E7F2, #62BADA );
 
 
   /*========== Font and typography ==========*/
+
   --body-font: "Manrope", sans-serif;
   --header-text-font: 'Roboto Slab', sans-serif;
+
+  --tiny-text: 10px;
   --small-text: 14px;
   --medium-text: 16px;
   --normal-text: 20px;
-  --large-text: 22px;
+  --large-text: 24px;
   --big-text: 30px;
-  --larger-text: 56px;
-  --extra-large-text: 60px;
+  --larger-text: 36px;
+  --extra-large-text: 48px;
 
   /*========== Font weight ==========*/
-  --font-thin: 400;
-  --font-normal: 500;
-  --font-medium: 600;
-  --font-semi-bold: 700;
-  --font-bold: 800;
-  --font-dark: 900;
+
+  --font-thin: 100;
+  --font-light: 200;
+  --font-normal: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 800;
+  --font-black: 900;
 }
 
 * {
@@ -44,7 +57,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: var(--body-font);
-  background-color: #FAFBFF;
+  background-color: var(--bg-color);
 }
 
 /* Above fold section */
@@ -61,8 +74,9 @@ html {
   padding: 30px 100px;
   width: 100%;
   top: 0;
-  font-weight: var(--font-thin);
+  font-weight: var(--font-regular);
   z-index: 1000;
+  position: relative;
 }
 
 .navbar-container {
@@ -72,27 +86,42 @@ html {
 }
 
 .navbar-title {
+  font-family: 'Gilroy-Bold', sans-serif;
   font-size: var(--normal-text);
-  color: black;
-  font-weight: var(--font-semi-bold);
+  color: var(--black-color);
+  font-weight: var(--font-bold);
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navbar-link a {
-  color: black;
+  color: var(--black-color);
   margin-right: 20px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link a box-icon {
+  margin-left: 5px;
 }
 
 .navbar-buttons-sign-in {
   text-decoration: none;
   margin-right: 30px;
   padding: 8px 12px;
-  color: black;
+  color: var(--black-color);
 }
 
 .navbar-buttons-start {
   background-color: var(--purple-color);
-  color: white;
+  color: var(--white-color);
   margin-right: 10px;
   padding: 15px 25px;
   text-decoration: none;
@@ -100,9 +129,10 @@ html {
 
 .navbar-buttons-start:hover {
   transition: 0.3s;
-  background-color: white;
+  background-color: var(--white-color);
   color: var(--purple-color);
 }
+
 
 /* Header */
 
