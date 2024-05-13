@@ -296,7 +296,7 @@ html {
   color: black;
   padding: 20px;
   font-size: var(--large-text);
-  font-weight: var(--font-thin);
+  font-weight: var(--font-regular);
   text-align: center;
 }
 
