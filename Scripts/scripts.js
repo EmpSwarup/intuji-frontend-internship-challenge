@@ -1,21 +1,9 @@
-// To get FAQ cards
-const faqCards = document.querySelectorAll('.faq-card');
-
-// To hide and show FAQ cards
-faqCards.forEach(card => {
-  card.addEventListener('click', () => {
-    card.classList.toggle('clicked');
-  });
-});
-
 // For menu toggle
-document.addEventListener('DOMContentLoaded', function() {
-  const menuIcon = document.querySelector('.menu-icon');
-  const navbarContainer = document.querySelector('.navbar-container');
+const hamburger = document.querySelector('.hamburger');
+const navLink = document.querySelector('.nav-link');
 
-  menuIcon.addEventListener('click', function() {
-    navbarContainer.classList.toggle('show-nav');
-  });
+hamburger.addEventListener('click', () => {
+  navLink.classList.toggle('hide');
 });
 
 // For testimonial carousel
@@ -47,17 +35,27 @@ const testimonialControlLeft = document.querySelector('.testimonial-control-left
 const testimonialControlRight = document.querySelector('.testimonial-control-right');
 
 testimonialControlLeft.addEventListener('click', () => {
-  testimonialCards.style.scrollBehavior = 'smooth'; // Enable smooth scrolling
+  testimonialCards.style.scrollBehavior = 'smooth';
   setTimeout(() => {
     testimonialCards.scrollLeft -= cardWidth;
-    testimonialCards.style.scrollBehavior = 'auto'; // Disable smooth scrolling after transition
+    testimonialCards.style.scrollBehavior = 'auto';
   }, transitionDuration);
 });
 
 testimonialControlRight.addEventListener('click', () => {
-  testimonialCards.style.scrollBehavior = 'smooth'; // Enable smooth scrolling
+  testimonialCards.style.scrollBehavior = 'smooth';
   setTimeout(() => {
     testimonialCards.scrollLeft += cardWidth;
-    testimonialCards.style.scrollBehavior = 'auto'; // Disable smooth scrolling after transition
+    testimonialCards.style.scrollBehavior = 'auto';
   }, transitionDuration);
+});
+
+// To get FAQ cards
+const faqCards = document.querySelectorAll('.faq-card');
+
+// To hide and show FAQ cards
+faqCards.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('clicked');
+  });
 });

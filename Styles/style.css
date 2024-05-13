@@ -66,6 +66,12 @@ html {
   background-color: var(--bg-color);
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 /* Above fold section */
 
 .above-fold {
@@ -76,78 +82,58 @@ html {
 
 /* Navbar */
 
-.navbar {
-  padding: 30px 100px;
-  width: 100%;
-  top: 0;
-  font-weight: var(--font-regular);
-  z-index: 1000;
-  position: relative;
-  background-color: transparent;
-}
-
-.menu-icon {
-  display: none;
-}
-
-.navbar-container {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
 }
 
-.navbar-title {
+.nav-title {
+  margin-right: 30px;
   font-family: 'Gilroy-Bold', sans-serif;
   font-size: var(--normal-text);
-  color: var(--black-color);
   font-weight: var(--font-bold);
+  padding-left: 10px;
 }
 
-.navbar-link {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 38%;
-  left: 50%;
-  transform: translateX(-50%);
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
 }
 
-.navbar-link a {
-  color: var(--black-color);
-  margin-right: 20px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: var(--black-color);
 }
 
-.navbar-link a box-icon {
-  margin-left: 5px;
+.nav-link {
+  z-index: 100;
+  position: fixed;
+  width: 94%;
+  top: 5rem;
+  left: 18px;
+  background-color: lightblue;
 }
 
-.navbar-buttons-sign-in {
-  text-decoration: none;
-  margin-right: 30px;
-  padding: 8px 12px;
-  color: var(--black-color);
+.nav-link a {
+  font-size: var(--small-text);
+  font-weight: var(--font-regular);
+
+  display: block;
+  text-align: center;
 }
 
-.navbar-buttons-start {
-  background-color: var(--purple-color);
+.nav-link a:hover {
   color: var(--white-color);
-  margin-right: 10px;
-  padding: 15px 25px;
-  text-decoration: none;
+  background-color: var(--blue-color);
 }
 
-.navbar-buttons-start:hover {
-  transition: 0.3s;
-  background-color: var(--white-color);
-  color: var(--purple-color);
-}
-
-.navbar-buttons {
-  display: flex;
-  align-items: center;
+.hide {
+  display: none;
 }
 
 /* Header */
@@ -1258,46 +1244,6 @@ html {
 
 @media screen and (max-width: 768px) {
 
-  /*--------- Navbar ---------*/
-
-  .navbar {
-    padding: 20px 30px;
-    margin-right: 0px;
-  }
-
-  .menu-container {
-    width: 200%;
-    height: 100%;
-    background-color: white;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .navbar-link,
-  .navbar-buttons {
-    top: 120px;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar-link a,
-  .navbar-buttons a {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .show-nav .navbar-link,
-  .show-nav .navbar-buttons {
-    top: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   /*--------- Header ---------*/
 
   .header {
@@ -1665,8 +1611,67 @@ html {
   }
 }
 
-@media screen and (min-width: 769px) {
-  .menu-container {
-    background-color: transparent;
+/*--------- Navbar ---------*/
+
+@media screen and (min-width: 600px) {
+  .nav {
+    padding: 30px 100px;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav-link-middle {
+
+    margin-left: 150px;
+    flex: 1;
+    text-align: center;
+    margin-right: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-link-middle a {
+    display: flex; /* Use flexbox for icon alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 15px 20px; /* Adjust padding */
+  }
+
+  .nav-link-middle box-icon {
+    margin-left: 5px; /* Add margin between text and icon */
+  }
+
+  .navbar-link a box-icon {
+    margin-left: 5px;
+  }
+  .nav-link-right {
+    margin-left: 50px;
+    display: flex;
+  }
+
+  .nav-link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .nav-start {
+    background-color: var(--purple-color);
+  }
+
+  .nav-start-a {
+    color: var(--white-color);
+  }
+
+  .hamburger {
+    display: none;
   }
 }
+
