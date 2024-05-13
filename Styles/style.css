@@ -77,6 +77,11 @@ html {
   font-weight: var(--font-regular);
   z-index: 1000;
   position: relative;
+  background-color: transparent; /* Keep the background color transparent */
+}
+
+.menu-icon {
+  display: none;
 }
 
 .navbar-container {
@@ -96,6 +101,7 @@ html {
   display: flex;
   align-items: center;
   position: absolute;
+  bottom: 38%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -133,6 +139,10 @@ html {
   color: var(--purple-color);
 }
 
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
 
 /* Header */
 
@@ -1104,4 +1114,54 @@ html {
   clear: both;
   border-top: 1px solid #ddd;
   padding-top: 20px;
+}
+
+/*========== Responsive Styles ==========*/
+
+/*--------- Navbar ---------*/
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px 30px;
+    margin-right: 0px;
+  }
+
+  .menu-container {
+    width: 200%;
+    height: 100%;
+    background-color: white;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-link,
+  .navbar-buttons {
+    top: 120px;
+    display: none;
+    flex-direction: column;
+    align-items: center; /* Align items to the center */
+  }
+
+  .navbar-link a,
+  .navbar-buttons a {
+    margin-right: 0; /* Remove the right margin */
+    margin-bottom: 10px; /* Add bottom margin to separate items */
+  }
+
+  .show-nav .navbar-link,
+  .show-nav .navbar-buttons {
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .menu-container {
+    background-color: transparent;
+  }
 }
