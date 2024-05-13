@@ -14,6 +14,7 @@
   --grey-bg-color: #ebebeb;
   --dark-grey-color: #e2e2e2;
   --sky-blue-color: #DFF6FF;
+  --orange-color: #FF7F5C;
   --bg-color: #FAFBFF;
   --black-color: #000;
   --white-color: #fff;
@@ -1122,14 +1123,25 @@ html {
 }
 
 .cta-title {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: var(--extra-large-text);
+  font-weight: var(--font-extra-bold);
+  color: var(--white-color);
   margin-bottom: 20px;
 }
 
 .cta-subtitile {
-  font-size: 18px;
-  color: blue;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 15px 30px;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cta-subtitile:hover {
+  background-color: darkorange;
 }
 
 /* Footer */
@@ -1462,6 +1474,26 @@ html {
 
   /*--------- CTA ---------*/
 
+  .cta {
+    background-color: #3734A9;
+    padding: 20px;
+  }
+
+  .cta-title {
+    font-size: var(--large-text);
+  }
+
+  .cta-subtitile {
+    width: 75%;
+  }
+
+  .cta-bg {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (min-width: 769px) {
