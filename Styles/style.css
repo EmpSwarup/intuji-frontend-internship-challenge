@@ -1664,14 +1664,14 @@ a {
   }
 
   .nav-link-middle a {
-    display: flex; /* Use flexbox for icon alignment */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    padding: 15px 20px; /* Adjust padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
   }
 
   .nav-link-middle box-icon {
-    margin-left: 5px; /* Add margin between text and icon */
+    margin-left: 5px;
   }
 
   .navbar-link a box-icon {
