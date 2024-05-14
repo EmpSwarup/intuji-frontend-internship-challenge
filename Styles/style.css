@@ -1296,6 +1296,7 @@ a {
   font-size: var(--medium-text);
   font-weight: var(--font-medium);
   color: var(--grey-color);
+  margin-right: 10px;
 }
 
 .footer-top {
