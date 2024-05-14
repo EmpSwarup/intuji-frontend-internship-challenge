@@ -1,3 +1,14 @@
+// For preloader
+document.addEventListener('DOMContentLoaded', function() {
+  // Show preloader
+  document.getElementById('preloader').style.display = 'block';
+});
+
+window.addEventListener('load', function() {
+  // Hide preloader after content is loaded
+  document.getElementById('preloader').style.display = 'none';
+});
+
 // For menu toggle
 const hamburger = document.querySelector('.hamburger');
 const navLink = document.querySelector('.nav-link');
